@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+
+@media screen and (max-width: 480px) {
+
+body{
+    background-color: black;
+}
+
+.choose{
+    position: relative;
+    top: 200px;
+    font-size: 16px;
+    color:red;
+}
+.button{
+    position: relative;
+    top: 200px;
+}
+    .header {
+        background-color: black;
+        
+        height: 360px;
+        width: 350;
+        background: url(./pics/nytimes-logo.png);
+       
+        color:red;
+        position: relative;
+        top:200px;
+        left: 120px;
+       
+        display: flex;
+        background-repeat: no-repeat;
+        flex-direction: column;
+}
+
+    
+.h4{
+    
+}
+    .footer {
+        background-color: black;
+        position: relative;
+        top:470px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: right;
+       color: red;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 1300px) {}
+
+    ;
+
+    @media screen and (max-width: 600px) {}
+
+}
