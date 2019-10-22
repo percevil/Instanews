@@ -1,60 +1,59 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-  }
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-
-
-
-
-@media screen and (max-width: 480px) {
-
-body{
-    background-color: black;
 }
 
-.choose{
-    position: relative;
-    top: 200px;
-    font-size: 16px;
-    color:red;
-}
-.button{
-    position: relative;
-    top: 200px;
-}
+
+
+
+@media screen and (max-width: 500px) {
+
+    body {
+        background-color: black;
+    }
+
+    .choosea {
+        position: relative;
+        top: 200px;
+        left: 48px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .button {
+        position: relative;
+        top: 200px;
+        left: 60px;
+    }
+
     .header {
         background-color: black;
-        
         height: 360px;
         width: 350;
         background: url(./pics/nytimes-logo.png);
-       
-        color:red;
+        color: red;
         position: relative;
-        top:200px;
-        left: 120px;
-       
+        top: 200px;
+        left: 140px;
         display: flex;
         background-repeat: no-repeat;
         flex-direction: column;
-}
+    }
 
-    
-.h4{
-    
-}
+
     .footer {
         background-color: black;
         position: relative;
-        top:470px;
+        top: 470px;
         display: flex;
-        align-items: flex-start;
-        justify-content: right;
-       color: red;
+        justify-content: space-around;
+        color: #c2c2c2;
     }
 
 
