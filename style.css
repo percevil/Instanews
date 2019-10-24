@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 *,
@@ -12,7 +13,9 @@ html {
 
 
 body {
-    background-color: black;
+    
+    /* background-color: black; */
+    
 }
 
 .choices {
@@ -26,10 +29,12 @@ body {
 .button {
     position: relative;
     top: 200px;
-    left: 60px;
+    left: 60px;   
 }
 
 .header {
+    font-family: 'Open Sans Light';
+    font-size: 16px;
     background-color: black;
     height: 360px;
     width: 350;
@@ -45,6 +50,8 @@ body {
 
 
 .footer {
+    font-family: 'Open Sans Light';
+    font-size: 16px;
     background-color: black;
     position: relative;
     top: 370px;

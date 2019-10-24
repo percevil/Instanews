@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "fonts/fonts.css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "InstaNews Project",
+		"liveServer.settings.port": 5501
+	}
+}

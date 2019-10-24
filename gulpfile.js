@@ -12,8 +12,6 @@ gulp.task("lint", function () {
         .pipe(eslint.failAfterError());
 });
 
-
-
 gulp.task("scripts",
     gulp.series("lint",
         function scripts () {
@@ -37,25 +35,12 @@ gulp.task('browser-sync', function () {
             baseDir: "./"
         }
     });
-});
-
-
-
-gulp.task('browser-sync', function () {
-    browserSync.init({
-        proxy: "yourlocal.dev"
-    });
-
     gulp.watch(["*.html", "build/js/*.js", "css/*.css"])
         .on("change", browserSync.reload);
-
 });
 
 gulp.task("watch", function () {
     gulp.watch("js/*.js", gulp.series("scripts"));
 });
 
-
-
-
-gulp.task("default", gulp.parallel("browser-sync", "scripts"));
+gulp.task("default", gulp.parallel("browser-sync", "watch"));
