@@ -8,7 +8,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
 
 *,
@@ -20,9 +20,9 @@ html {
 
 
 body {
-    
-    background-color: black;
-    
+
+    background-color: grey;
+
 }
 
 .choices {
@@ -36,43 +36,48 @@ body {
 .button {
     font-size: 16px;
 
-    width: 65px;
+    width: 75px;
     color: red;
     position: relative;
     top: 200px;
-    left: 60px;   
+    left: 60px;
 }
 
 .header {
+   
+    background: url(../pics/nytimes-logo.png);
     font-family: 'Open Sans Light';
     font-size: 16px;
-    background-color: black;
-    height: 360px;
-    width: 350;
-    background: url(./pics/nytimes-logo.png);
-    color: red;
+    background-color: grey;
+    height: 300px;
+    
+   
     position: relative;
-    top: 200px;
-    left: 140px;
+    left: 240px;
     display: flex;
     background-repeat: no-repeat;
     flex-direction: column;
 }
 
-.site-content{
+.site-content {
+
+    
     font-size: 16px;
     color: chartreuse;
     display: flex;
-   
     flex-wrap: wrap;
-    height: 200px;
+    justify-content: flex-start;
+   
 }
 
 
 .footer {
+   
+
     font-family: 'Open Sans Light';
     font-size: 16px;
     background-color: black;
+    height: 300px;
     position: relative;
     top: 370px;
     display: flex;
@@ -115,12 +120,12 @@ body {
 // .button{
 //     position: relative;
 //     left: 248px;
-   
+
 // }
 // .choices{
 //     position: relative;
 //     left: 248px;
-   
+
 //    }
 // }
 
@@ -132,14 +137,16 @@ body {
 
 li {
     flex: 0 1 100%;
+
     @include tablet {
-       flex: 0 1 50%;
+        flex: 0 1 50%;
     }
 }
 
 li {
     flex: 0 1 100%;
+
     @include desktop {
-       flex: 0 1 25%;
+        flex: 0 1 25%;
     }
 }

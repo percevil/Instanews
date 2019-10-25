@@ -8,7 +8,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: black; }
+  background-color: grey; }
 
 .choices {
   position: relative;
@@ -19,23 +19,20 @@ body {
 
 .button {
   font-size: 16px;
-  width: 65px;
+  width: 75px;
   color: red;
   position: relative;
   top: 200px;
   left: 60px; }
 
 .header {
+  background: url(../pics/nytimes-logo.png);
   font-family: 'Open Sans Light';
   font-size: 16px;
-  background-color: black;
-  height: 360px;
-  width: 350;
-  background: url(./pics/nytimes-logo.png);
-  color: red;
+  background-color: grey;
+  height: 300px;
   position: relative;
-  top: 200px;
-  left: 140px;
+  left: 240px;
   display: -webkit-box;
   display: flex;
   background-repeat: no-repeat;
@@ -49,12 +46,14 @@ body {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  height: 200px; }
+  -webkit-box-pack: start;
+          justify-content: flex-start; }
 
 .footer {
   font-family: 'Open Sans Light';
   font-size: 16px;
   background-color: black;
+  height: 300px;
   position: relative;
   top: 370px;
   display: -webkit-box;
