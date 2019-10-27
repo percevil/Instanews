@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
            $('.site-content').append("<li>"+ value.abstract +"</li>");
            $('.site-content').append(`<img src="`+value.multimedia[2].url+`"></img>`);
 
+           //take image file and make it into a background file for each list item.
+           
+
           //INSIDE .DONE
           })
           //OUTSIDE .DONE

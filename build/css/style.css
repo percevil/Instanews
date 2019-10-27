@@ -8,7 +8,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: grey; }
+  background-color: blue; }
 
 .choices {
   position: relative;
@@ -26,10 +26,10 @@ body {
   left: 60px; }
 
 .header {
-  background: url(../pics/nytimes-logo.png);
+  background: url(../images/nyt-logo.svg);
   font-family: 'Open Sans Light';
   font-size: 16px;
-  background-color: grey;
+  background-color: blue;
   height: 300px;
   position: relative;
   left: 240px;
@@ -45,14 +45,16 @@ body {
   color: chartreuse;
   display: -webkit-box;
   display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-          justify-content: flex-start; }
+  flex-wrap: wrap; }
+
+.list {
+  height: 300px;
+  width: 300px; }
 
 .footer {
   font-family: 'Open Sans Light';
   font-size: 16px;
-  background-color: black;
+  background-color: blue;
   height: 300px;
   position: relative;
   top: 370px;
