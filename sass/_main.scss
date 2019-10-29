@@ -1,150 +1,33 @@
-@import "variables";
-@import "mixins";
+.logo {
+    height: 150px;
+    width: 150px;
 
-
-
-
-
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-
-
-body {
-
-    background-color: $bg-color;
-
-}
-
-.choices {
     position: relative;
-    top: 200px;
-    left: 48px;
-    font-size: 16px;
-    color: white;
+    left: 180px;
+    top: 25px;
+
 }
 
-.button {
-    font-size: 16px;
-    width: 75px;
-    color: red;
+.drop-down {
     position: relative;
-    top: 200px;
-    left: 60px;
+    left: 200px;
+    top: 50px;
 }
 
 .header {
-    background: url(../images/nyt-logo.svg);
-    font-family: 'Open Sans Light';
-    font-size: 16px;
-    background-color: $bg-color;
-    height: 300px;
-    position: relative;
-    left: 240px;
-    display: flex;
-    background-repeat: no-repeat;
-    flex-direction: column;
-}
-
-.site-content {
-    font-size: 16px;
-    color: $content-color;
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-.list{
-
-    height: 300px;
-    width: 300px;
+    height: $head-height;
 
 
 }
-
 
 .footer {
     font-family: 'Open Sans Light';
     font-size: 16px;
     background-color: $bg-color;
-    height: 300px;
-    position: relative;
-    top: 370px;
+    height: 50px;
     display: flex;
     justify-content: space-around;
     color: $footer-color;
-}
-
-
-
-// @media screen and (min-width: 600px) {
-
-//     .choices {
-//         position: relative;
-//         left: 175px;
-//         top: 55px;
-//        }
-
-//     .button {
-//     position: relative;
-//     left: 175px;
-//     top: 60px;
-// }   
-
-
-
-// @media screen and ("desktop") {
-
-
-// .footer {
-//     display: flex;
-//     flex-direction: column;   
-//     position: relative; 
-//     left: 25px;
-// }
-
-// .header{
-//     position: relative;
-//     left: 0px;
-// }
-// .button{
-//     position: relative;
-//     left: 248px;
-
-// }
-// .choices{
-//     position: relative;
-//     left: 248px;
-
-//    }
-// }
-
-
-
-
-
-// };
-
-li {
-    flex: 0 1 100%;
-
-    @include tablet {
-        flex: 0 1 50%;
-    }
-}
-
-li {
-    flex: 0 1 100%;
-
-    @include desktop {
-        flex: 0 1 25%;
-    }
+    position: relative;
+    left: 25px;
 }

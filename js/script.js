@@ -1,36 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  $('button').on('click', function () {
+  $('#drop-down').on('change', function () {
+    let sectionName = $(this).val().toLowerCase();
+
     $.ajax({
         method: 'GET',
-        url: 'https://api.nytimes.com/svc/topstories/v2/science.json?api-key=iNefxWKuTjrsV6kBGllnT3cwMLAt2670'
+        url: `https://api.nytimes.com/svc/topstories/v2/${sectionName}.json?api-key=iNefxWKuTjrsV6kBGllnT3cwMLAt2670`,
+        dataType: "json"
       })
       .done(function (data) {
-        // console.log(data.results[0].abstract);
         console.log(data);
-
-        $.each(data.results, function (key, value) {
-            // $('.site-content').append("<li>" + data.title + "</li>");
-           $('.site-content').append("<li>"+ value.abstract +"</li>");
-           $('.site-content').append(`<img src="`+value.multimedia[2].url+`"></img>`);
-
-           //take image file and make it into a background file for each list item.
-           
-
-          //INSIDE .DONE
-          })
-          //OUTSIDE .DONE
-          // .fail(function () {
-          //   $('.error-log').append('Sorry there was an error.');
-          // });
-
+        const imageFilter = data.results.filter(function (event) {
+          if (event.multimedia[4] !== undefined) {
+            return true
+          } else {
+            return false;
+          }
+        })
+        const displayedResults = imageFilter.slice(0, 12)
+        $.each(displayedResults, function (key, value) {
+          console.log("hello", value)
+          $('#site-content').append(`
+            <article class="article-size" style="background-image:url(${value.multimedia[4].url})">
+              <p class="description">${value.abstract}</p>
+            </article>
+            `);
+        });
       });
   });
-
-
-
-
-
-
-
 });

@@ -1,11 +1,14 @@
-// $primary-color: green;
-$tablet-width: 900px;
-$desktop-width: 1200px;
+//Break-points
+
+$tablet-width: 480px;
+$desktop-width: 1000px;
 
 
 //Colors
-$bg-color: blue;
-$content-color:chartreuse;
-$footer-color:#c2c2c2;     
+$bg-color: #000;
+$content-color:white;
+$footer-color:#c2c2c2;
 
 
+//header-height
+$head-height: 300px;

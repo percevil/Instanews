@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    background-color: $bg-color;
+
+}
+
+#site-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: $content-color;
+
+}
+
+.article-size {
+    height: 460px;
+    width: 420px;
+    background-size: length cover;
+    background-repeat: no-repeat;
+
+}
+
+.description {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 360px;
+    background: rgba(0, 0, 0, 0.3)
+}

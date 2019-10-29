@@ -1,101 +1,88 @@
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-body {
-  background-color: blue; }
-
-.choices {
-  position: relative;
-  top: 200px;
-  left: 48px;
-  font-size: 16px;
-  color: white; }
-
-.button {
-  font-size: 16px;
-  width: 75px;
-  color: red;
-  position: relative;
-  top: 200px;
-  left: 60px; }
-
-.header {
-  background: url(../images/nyt-logo.svg);
-  font-family: 'Open Sans Light';
-  font-size: 16px;
-  background-color: blue;
-  height: 300px;
-  position: relative;
-  left: 240px;
-  display: -webkit-box;
-  display: flex;
-  background-repeat: no-repeat;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
-
-.site-content {
-  font-size: 16px;
-  color: chartreuse;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap; }
-
-.list {
-  height: 300px;
-  width: 300px; }
-
-.footer {
-  font-family: 'Open Sans Light';
-  font-size: 16px;
-  background-color: blue;
-  height: 300px;
-  position: relative;
-  top: 370px;
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-around;
-  color: #c2c2c2; }
-
-li {
-  -webkit-box-flex: 0;
-          flex: 0 1 100%; }
-  @media (max-width: 900px) {
-    li {
-      -webkit-box-flex: 0;
-              flex: 0 1 50%; } }
-
-li {
-  -webkit-box-flex: 0;
-          flex: 0 1 100%; }
-  @media (min-width: 1200px) {
-    li {
-      -webkit-box-flex: 0;
-              flex: 0 1 25%; } }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -104,24 +91,94 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #000; }
+
+#site-content {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  color: white; }
+
+.article-size {
+  height: 460px;
+  width: 420px;
+  background-size: length cover;
+  background-repeat: no-repeat; }
+
+.description {
+  height: 80px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  position: relative;
+  top: 360px;
+  background: rgba(0, 0, 0, 0.3); }
+
+.logo {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 180px;
+  top: 25px; }
+
+.drop-down {
+  position: relative;
+  left: 200px;
+  top: 50px; }
+
+.header {
+  height: 300px; }
+
+.footer {
+  font-family: 'Open Sans Light';
+  font-size: 16px;
+  background-color: #000;
+  height: 50px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  color: #c2c2c2;
+  position: relative;
+  left: 25px; }
