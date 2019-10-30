@@ -150,6 +150,10 @@ body {
     .article-size {
       -webkit-box-flex: 1;
               flex: 1 1 50%; } }
+  @media (min-width: 1000px) {
+    .article-size {
+      -webkit-box-flex: 1;
+              flex: 1 1 25%; } }
 
 .description {
   height: 80px;
@@ -165,23 +169,31 @@ body {
   height: 150px;
   width: 150px;
   position: relative;
-  left: 150px;
+  left: 160px;
   top: 25px; }
   @media (min-width: 600px) {
     .logo {
-      -webkit-box-flex: 1;
-              flex: 1 1 50%;
       height: 70px;
       width: 70px;
-      position: relative; } }
+      position: relative;
+      left: 80px;
+      top: 40px; } }
 
 .drop-down {
   position: relative;
-  left: 180px;
+  left: 190px;
   top: 50px; }
+  @media (min-width: 600px) {
+    .drop-down {
+      position: relative;
+      top: -20px;
+      left: 230px; } }
 
 .header {
   height: 300px; }
+  @media (min-width: 600px) {
+    .header {
+      height: 150px; } }
 
 .footer {
   font-family: 'Open Sans Light';

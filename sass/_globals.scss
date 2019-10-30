@@ -1,9 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
-
 
 body {
     background-color: $bg-color;
@@ -16,7 +14,6 @@ body {
     flex-wrap: wrap;
     font-size: 16px;
     color: $content-color;
-
 }
 
 .article-size {
@@ -27,7 +24,10 @@ body {
 
     @include tablet {
         flex: 1 1 50%;
+    }
 
+    @include desktop {
+        flex: 1 1 25%;
     }
 }
 
