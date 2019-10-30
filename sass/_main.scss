@@ -3,21 +3,29 @@
     width: 150px;
 
     position: relative;
-    left: 180px;
+    left: 150px;
     top: 25px;
+
+    @include tablet {
+        flex: 1 1 50%;
+        height: 70px;
+        width: 70px;
+        position: relative;
+        // left: 150px;
+        // top: 25px;
+
+    }
 
 }
 
 .drop-down {
     position: relative;
-    left: 200px;
+    left: 180px;
     top: 50px;
 }
 
 .header {
     height: $head-height;
-
-
 }
 
 .footer {
@@ -29,5 +37,5 @@
     justify-content: space-around;
     color: $footer-color;
     position: relative;
-    left: 25px;
+    right: 12px;
 }
