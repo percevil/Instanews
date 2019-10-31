@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instanews Project</title>
-    <!-- <link rel="stylesheet" href="./sass/_reset.scss"> -->
-    <!-- <link rel="stylesheet" href="../InstaNews Project/fonts/"> -->
+    <link rel="stylesheet" href="./sass/_reset.scss">
+    <link rel="stylesheet" href="./fonts/fonts.css/">
     <link rel="stylesheet" href="./build/css/style.min.css">
 </head>
 
 
 <body>
     <header class="header">
-
-        <img class="logo" src="./images/nyt-logo.svg" alt="NYT-LOGO">
-        <h1 class="choices">Choose a section:</h1>
-
-        <form id="head-elements">
+        <div class="selection">
+            <img class="logo" src="./images/nyt-logo.svg" alt="NYT-LOGO">
+        </div>
+        <div>
+            <h1 class="choices">Choose a section:</h1>
 
             <select name="Sections" id="drop-down" class="drop-down">
                 <option disabled="disabled" selected="selected">Selection</option>
@@ -30,15 +30,21 @@
                 <option value="technology" id="technology">Technology</option>
                 <option value="fashion" id="fashion">Fashion</option>
             </select>
-
-        </form>
-
+        </div>
     </header>
 
+    <div>
+        <img class="ajax-loader" src="./images/ajax-loader.gif" alt="Ajax-loader">
+    </div>
+
+    <main id="site-content" class="site-content">
+
+        <p id="overlay" class="article-block"></p>
 
 
-    <main id="site-content" class="site-content"></main>
-    <p id="overlay" class="article-block"></p>
+
+    </main>
+
 
     <footer class="footer">
 

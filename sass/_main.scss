@@ -1,39 +1,85 @@
 .logo {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    left: 160px;
-    top: 25px;
+    // margin: 0 auto;
+    // height: 225px;
+    // width: 225px;
+    // position: relative;
+    // left: 135px;
+    // top: 230px;
+    
+}
+
+
+
+.loading {
+    .logo {
+        height: 150px;
+        width: 150px;
+        position: relative;
+        right: -180px;
+        top: 45px;
+    }
+
+    h1 {
+        position: relative;
+        top: 220px;
+        left: 150px;
+    }
+
+    .drop-down {
+        position: relative;
+        left: 160px;
+        top: 50px;
+
+    }
 
     @include tablet {
-        height: 70px;
-        width: 70px;
+        height: 140px;
+        width: 140px;
         position: relative;
         left: 80px;
-        top: 40px;
+        top: 280px;
+    }
+
+    @include desktop {
+        height: 220px;
+        width: 220px;
+        position: relative;
+        left: 40px;
+        top: 220px;
+
     }
 }
 
 .drop-down {
+    // position: relative;
+    // left: 210px;
+    // top: 250px;
+
+}
+
+.loading {
+    .drop-down {}
+
+}
+
+
+
+
+
+@include tablet {
     position: relative;
-    left: 190px;
-    top: 50px;
-
-    @include tablet {
-        position: relative;
-        top: -20px;
-        left: 230px;
-    }
+    top: 190px;
+    left: 230px;
 }
 
-.header {
-    height: $mobile-height;
-
-    @include tablet {
-        height: $tablet-height
-    }
+@include desktop {
+    position: relative;
+    top: 90px;
+    left: 340px;
 
 }
+
+
 
 .footer {
     font-family: 'Open Sans Light';
@@ -45,4 +91,18 @@
     color: $footer-color;
     position: relative;
     right: 12px;
+    bottom: -380px;
+
+    @include tablet {
+        position: relative;
+        right: 12px;
+        bottom: -520px;
+    }
+
+    @include desktop {
+        position: relative;
+        left: -470px;
+        bottom: -520px;
+
+    }
 }

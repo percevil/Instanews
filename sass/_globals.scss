@@ -3,9 +3,43 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    // height: $mobile-height;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transform: translateY(70%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include tablet {
+        // height: $tablet-height;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+h1 {
+    color: white;
+}
+
 body {
     background-color: $bg-color;
 
+}
+
+
+
+.ajax-loader {
+    display: none;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right: 50vw;
+    bottom: 50vh;
 }
 
 .site-content {
@@ -32,6 +66,7 @@ body {
 }
 
 .description {
+    font-family: 'open-sans-light';
     height: 80px;
     display: flex;
     align-items: center;
