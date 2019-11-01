@@ -3,7 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
   $('#drop-down').on('change', function () {
     let sectionName = $(this).val().toLowerCase();
 
+
+
+
+
     $('.ajax-loader').show();
+
+
+
 
 
 
@@ -14,10 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         dataType: "json"
       })
       .done(function (data) {
-
-        $('header').addClass('loading');
-
-
+        $('header').addClass('loaded');
+        $('#site-content').empty();
 
         const imageFilter = data.results.filter(function (event) {
           if (event.multimedia[4] !== undefined) {
@@ -32,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <article class="article-size" style="background-image:url(${value.multimedia[4].url})">
               <p class="description">${value.abstract}</p>
             </article>`);
-
         })
       })
       .always(function () {

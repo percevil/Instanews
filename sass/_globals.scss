@@ -3,34 +3,47 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    // height: $mobile-height;
+
+.header {
+    height: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    transform: translateY(70%);
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    @include tablet {
-        // height: $tablet-height;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
 
 
-
 h1 {
+    position: relative;
+    top: 220px;
+    left: 150px;
+}
+
+h4 {
     color: white;
+
+    @include desktop {
+        position: relative;
+        left: -125px;
+
+
+    }
 }
 
 body {
     background-color: $bg-color;
-
 }
 
+.choices {
+    margin: 20px 0px;
+    color: white;
+    position: relative;
+    left: -5px;
+    top: -10px;
+}
 
 
 .ajax-loader {
@@ -73,4 +86,32 @@ body {
     position: relative;
     top: 380px;
     background: rgba(0, 0, 0, 0.5)
+}
+
+
+.footer {
+    font-family: 'Open Sans Light';
+    font-size: 16px;
+    background-color: $bg-color;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: $footer-color;
+    position: relative;
+    right: -5px;
+    bottom: -380px;
+
+    @include tablet {
+        position: relative;
+        right: -5px;
+        bottom: -450px;
+
+    }
+
+    @include desktop {
+        position: relative;
+        left: -470px;
+        bottom: -520px;
+
+    }
 }
