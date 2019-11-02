@@ -27,7 +27,7 @@
         top: 225px;
     }
 
-    // logo bottom
+
 }
 
 .drop-down {
@@ -35,7 +35,6 @@
     left: -5px;
 }
 
-// before loaded top
 .chooseadrop {
     display: flex;
     flex-direction: column;
@@ -53,15 +52,10 @@
         position: relative;
         left: -290px;
     }
-
-    // choose a drop bottom
 }
 
-
-// ****** AFTER LOAD !!! BELOW!!!! *******
 .loaded {
 
-    //mobile top loaded
     .logo {
         height: 150px;
         width: 150px;
@@ -84,11 +78,9 @@
 
     }
 
-    //mobile bottom
     @include tablet {
-        //tablet top loaded
 
-        height: 150px; //header height
+        height: 150px;
 
         .logo {
             height: 70px;
@@ -108,41 +100,22 @@
         }
     }
 
-    //tablet bottom loaded
-
-
-
     @include desktop {
-        //desktop top loaded
-
 
         .logo {
             position: relative;
             left: -630px;
             top: 35px;
-            //Animation
             position: relative;
             transition: 1s;
             transform: translateX(-50%);
-
         }
 
         .chooseadrop {
             position: relative;
             top: -50px;
             left: -480px;
-
         }
-
     }
 
-    //desktop bottom loaded
-
-
-
-
-
-
 }
-
-//.loaded  Very bottom  !!!!
