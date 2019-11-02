@@ -3,7 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .header {
     height: 300px;
     display: flex;
@@ -33,6 +32,7 @@ h4 {
 
 body {
     background-color: $bg-color;
+    font-size: 1rem;
     font-family: 'Open Sans';
     font-style: normal;
 }
@@ -48,8 +48,8 @@ body {
 
 .ajax-loader {
     display: none;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     position: fixed;
     right: 50vw;
     bottom: 50vh;
@@ -59,7 +59,6 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    font-size: 16px;
     color: $content-color;
 }
 
@@ -68,8 +67,6 @@ body {
     height: 460px;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
-    text-decoration: none;
 
 
     @include tablet {
@@ -81,8 +78,8 @@ body {
     }
 }
 
+
 .description {
-    font-family: 'Open Sans';
     height: 80px;
     display: flex;
     align-items: center;
@@ -93,7 +90,6 @@ body {
 
 
 .footer {
-    font-family: 'Open Sans Light';
     font-size: 16px;
     background-color: $bg-color;
     height: 50px;

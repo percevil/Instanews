@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .done(function (data) {
         $('header').addClass('loaded');
-        $('#site-content').empty();
+        $('#page-content').empty();
 
         const imageFilter = data.results.filter(function (event) {
           if (event.multimedia[4] !== undefined) {
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         const displayedResults = imageFilter.slice(0, 12)
         $.each(displayedResults, function (key, value) {
-          $('#site-content').append(`
-            <a href="${value.url}" target="_blank">
+          $('#page-content').append(`
+             <a href="${value.url}" target="_blank">
               <article class="article-size" style="background-image:url(${value.multimedia[4].url})">
                 <p class="description">${value.abstract}</p>
               </article>

@@ -2,16 +2,23 @@
     height: 220px;
     width: 220px;
     position: relative;
-    right: 5px;
+    right: 190px;
     top: 220px;
 
-    @include tablet {
+    position: relative;
+    transition: 1s;
+    transform: translateX(85%);
 
+    @include tablet {
         height: 220px;
         width: 220px;
         position: relative;
         left: -120px;
         top: 220px;
+
+        position: relative;
+        transition: 1s;
+        transform: translateX(0%);
     }
 
     @include desktop {
@@ -59,14 +66,22 @@
         height: 150px;
         width: 150px;
         position: relative;
-        right: 5px;
+        right: -8px;
         top: -10px;
+
+        position: relative;
+        transition: 1s;
+        transform: translateY(0-1%);
     }
 
     .chooseadrop {
 
         position: relative;
         top: -10px;
+        position: relative;
+        transition: 1s;
+        transform: translateX(10%);
+
     }
 
     //mobile bottom
@@ -81,15 +96,16 @@
             position: relative;
             left: -330px;
             top: 35px;
+            position: relative;
+            transition: 1s;
+            transform: translateX(-50%);
         }
 
         .chooseadrop {
             position: relative;
             top: -50px;
-            left: -140px;
+            left: -160px;
         }
-
-
     }
 
     //tablet bottom loaded
@@ -99,28 +115,30 @@
     @include desktop {
         //desktop top loaded
 
+
         .logo {
             position: relative;
             left: -630px;
             top: 35px;
+            //Animation
+            position: relative;
+            transition: 1s;
+            transform: translateX(-50%);
+
         }
 
         .chooseadrop {
             position: relative;
             top: -50px;
-            left: -440px;
+            left: -480px;
+
         }
-
-
-
-
-
-
-
 
     }
 
-    //desktop bottom
+    //desktop bottom loaded
+
+
 
 
 
