@@ -3,17 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $('#drop-down').on('change', function () {
     let sectionName = $(this).val().toLowerCase();
 
-
-
-
-
     $('.ajax-loader').show();
-
-
-
-
-
-
 
     $.ajax({
         method: 'GET',
@@ -34,9 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const displayedResults = imageFilter.slice(0, 12)
         $.each(displayedResults, function (key, value) {
           $('#site-content').append(`
-            <article class="article-size" style="background-image:url(${value.multimedia[4].url})">
-              <p class="description">${value.abstract}</p>
-            </article>`);
+            <a href="${value.url}" target="_blank">
+              <article class="article-size" style="background-image:url(${value.multimedia[4].url})">
+                <p class="description">${value.abstract}</p>
+              </article>
+            </a>`);
         })
       })
       .always(function () {

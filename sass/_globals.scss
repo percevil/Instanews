@@ -28,13 +28,13 @@ h4 {
     @include desktop {
         position: relative;
         left: -125px;
-
-
     }
 }
 
 body {
     background-color: $bg-color;
+    font-family: 'Open Sans';
+    font-style: normal;
 }
 
 .choices {
@@ -68,6 +68,9 @@ body {
     height: 460px;
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    text-decoration: none;
+
 
     @include tablet {
         flex: 1 1 50%;
@@ -79,7 +82,7 @@ body {
 }
 
 .description {
-    font-family: 'open-sans-light';
+    font-family: 'Open Sans';
     height: 80px;
     display: flex;
     align-items: center;
@@ -99,7 +102,7 @@ body {
     color: $footer-color;
     position: relative;
     right: -5px;
-    bottom: -380px;
+    bottom: -420px;
 
     @include tablet {
         position: relative;
@@ -110,8 +113,8 @@ body {
 
     @include desktop {
         position: relative;
-        left: -470px;
-        bottom: -520px;
+        left: -410px;
+        bottom: -420px;
 
     }
 }
