@@ -24,11 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const displayedResults = imageFilter.slice(0, 12)
         $.each(displayedResults, function (key, value) {
           $('#page-content').append(`
-             <a href="${value.url}" target="_blank">
-              <article class="article-size" style="background-image:url(${value.multimedia[4].url})">
+             <a class="article-size" href="${value.url}" target="_blank" style="background-image:url(${value.multimedia[4].url})" >
                 <p class="description">${value.abstract}</p>
-              </article>
-            </a>`);
+            </a>`)
         })
       })
       .always(function () {
