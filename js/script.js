@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         $.each(displayedResults, function (key, value) {
           $('#page-content').append(`
              <a class="article-size" href="${value.url}" target="_blank" style="background-image:url(${value.multimedia[4].url})" >
-                <p class="description">${value.abstract}</p>
-            </a>`)
+                <p class="description">${value.abstract}</p></a>`)
         })
       })
       .always(function () {

@@ -1,6 +1,6 @@
 .logo {
-    height: 220px;
-    width: 220px;
+    height: 13.75em;
+    width: 13.75em;
     position: relative;
     right: 190px;
     top: 220px;
@@ -9,8 +9,8 @@
     transform: translateX(85%);
 
     @include tablet {
-        height: 220px;
-        width: 220px;
+        height: 13.75em;
+        width: 13.75em;
         position: relative;
         left: -120px;
         top: 220px;
@@ -55,14 +55,13 @@
 .loaded {
 
     .logo {
-        height: 150px;
-        width: 150px;
+        height: 9.375em;
+        width: 9.375em;
         position: relative;
-        right: -8px;
         top: -10px;
-        position: relative;
         transition: 1s;
-        transform: translateY(0-1%);
+        transform: translateY(1%);
+        transform: translateX(125%);
     }
 
     .chooseadrop {
@@ -70,8 +69,6 @@
         top: -10px;
         position: relative;
         transition: 1s;
-        transform: translateX(10%);
-
     }
 
     @include tablet {
@@ -79,8 +76,8 @@
         height: 150px;
 
         .logo {
-            height: 70px;
-            width: 70px;
+            height: 4.375em;
+            width: 4.375em;
             position: relative;
             left: -330px;
             top: 35px;

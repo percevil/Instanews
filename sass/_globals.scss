@@ -24,7 +24,7 @@ h4 {
 
 body {
     background-color: $bg-color;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: 'Open Sans';
     font-style: normal;
 }
@@ -40,8 +40,8 @@ body {
 
 .ajax-loader {
     display: none;
-    height: 50px;
-    width: 50px;
+    height: 3.125em;
+    width: 3.125em;
     position: fixed;
     right: 50vw;
     bottom: 50vh;
@@ -56,8 +56,8 @@ body {
 
 .article-size {
     flex: 1 1 100%;
-    width: 400px;
-    height: 420px;
+    width: 25em;
+    height: 26.25em;
     display: flex;
     background-size: cover;
 
@@ -83,7 +83,7 @@ body {
 }
 
 .footer {
-    font-size: 16px;
+    font-size: 1em;
     background-color: $bg-color;
     height: 50px;
     display: flex;

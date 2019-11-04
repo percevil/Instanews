@@ -159,7 +159,7 @@ h4 {
 
 body {
   background-color: #000;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: 'Open Sans';
   font-style: normal; }
 
@@ -172,8 +172,8 @@ body {
 
 .ajax-loader {
   display: none;
-  height: 50px;
-  width: 50px;
+  height: 3.125em;
+  width: 3.125em;
   position: fixed;
   right: 50vw;
   bottom: 50vh; }
@@ -187,8 +187,8 @@ body {
 .article-size {
   -webkit-box-flex: 1;
           flex: 1 1 100%;
-  width: 400px;
-  height: 420px;
+  width: 25em;
+  height: 26.25em;
   display: -webkit-box;
   display: flex;
   background-size: cover; }
@@ -212,7 +212,7 @@ body {
   background: rgba(0, 0, 0, 0.5); }
 
 .footer {
-  font-size: 16px;
+  font-size: 1em;
   background-color: #000;
   height: 50px;
   display: -webkit-box;
@@ -234,8 +234,8 @@ body {
       bottom: -420px; } }
 
 .logo {
-  height: 220px;
-  width: 220px;
+  height: 13.75em;
+  width: 13.75em;
   position: relative;
   right: 190px;
   top: 220px;
@@ -246,8 +246,8 @@ body {
           transform: translateX(85%); }
   @media (min-width: 600px) {
     .logo {
-      height: 220px;
-      width: 220px;
+      height: 13.75em;
+      width: 13.75em;
       position: relative;
       left: -120px;
       top: 220px;
@@ -286,32 +286,30 @@ body {
       left: -290px; } }
 
 .loaded .logo {
-  height: 150px;
-  width: 150px;
+  height: 9.375em;
+  width: 9.375em;
   position: relative;
-  right: -8px;
   top: -10px;
-  position: relative;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-transform: translateY(-1%);
-          transform: translateY(-1%); }
+  -webkit-transform: translateY(1%);
+          transform: translateY(1%);
+  -webkit-transform: translateX(125%);
+          transform: translateX(125%); }
 
 .loaded .chooseadrop {
   position: relative;
   top: -10px;
   position: relative;
   -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translateX(10%);
-          transform: translateX(10%); }
+  transition: 1s; }
 
 @media (min-width: 600px) {
   .loaded {
     height: 150px; }
     .loaded .logo {
-      height: 70px;
-      width: 70px;
+      height: 4.375em;
+      width: 4.375em;
       position: relative;
       left: -330px;
       top: 35px;
