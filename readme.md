@@ -1,4 +1,4 @@
-# Instanews API Project #2 <h1>
+# Instanews  - API Project #2 <h1>
 
 The APP pulls content from NYT through the API. 
 The purpose of the project is to incorporate elements of jquery, ajax, json, sass/scss, and api with previously learned html and css. By doing so, this project pulls content from NYT in different categories such as business, fashion, sports etc. and loads them onto the website, displaying 12 articles.
