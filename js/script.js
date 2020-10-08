@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $.ajax({
         method: 'GET',
-        url: `https://api.nytimes.com/svc/topstories/v2/${sectionName}.json?api-key=iNefxWKuTjrsV6kBGllnT3cwMLAt2670`,
+        url: `https://api.nytimes.com/svc/topstories/v2/${sectionName}.json?api-key=08FTPCH5VSvPGRVNhWSAJrPYgQx0TZKl`,
         dataType: "json"
       })
       .done(function (data) {
